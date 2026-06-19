@@ -30,7 +30,7 @@
     background-repeat: no-repeat;
   }
   .hero::before { content: ""; position: absolute; inset: 0; background: rgba(8,8,8,0.75); pointer-events: none; }
-  .hero-frog { width: min(320px, 70vw); height: auto; display: block; margin: 0 auto 32px; position: relative; z-index: 1; }
+  .hero-frog { width: min(200px, 40vw); height: auto; display: block; margin: 32px auto 0; position: relative; z-index: 1; opacity: 0.85; }
   .hero-title { font-family: "Bebas Neue", sans-serif; font-size: clamp(52px, 10vw, 96px); letter-spacing: 6px; text-align: center; color: var(--text); line-height: 1; position: relative; z-index: 1; }
   .hero-title span { color: var(--gold); }
   .hero-sub { font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); text-align: center; margin-top: 16px; position: relative; z-index: 1; }
@@ -92,7 +92,6 @@
 </nav>
 
 <section class="hero" id="hero">
-  <img src="oggie.png" alt="OGGIE The Frog" class="hero-frog">
   <h1 class="hero-title">OGGIE <span>The Frog</span></h1>
   <p class="hero-sub">The Original Frog Legend</p>
   <div class="ca-box">
@@ -102,6 +101,7 @@
       <button class="ca-copy" onclick="copyCA()">Copy</button>
     </div>
   </div>
+  <img src="oggie.png" alt="OGGIE The Frog" class="hero-frog">
 </section>
 
 <section id="about">
